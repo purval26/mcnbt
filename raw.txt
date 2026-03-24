@@ -1,0 +1,2395 @@
+{
+  "Bukkit.updateLevel": {
+    "type": "int",
+    "value": 2
+  },
+  "foodTickTimer": {
+    "type": "int",
+    "value": 0
+  },
+  "AbsorptionAmount": {
+    "type": "float",
+    "value": 0
+  },
+  "XpTotal": {
+    "type": "int",
+    "value": 11120
+  },
+  "active_effects": {
+    "type": "list",
+    "value": {
+      "type": "compound",
+      "value": [
+        {
+          "ambient": {
+            "type": "byte",
+            "value": 1
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:speed"
+          },
+          "duration": {
+            "type": "int",
+            "value": 285
+          },
+          "show_icon": {
+            "type": "byte",
+            "value": 1
+          }
+        }
+      ]
+    }
+  },
+  "playerGameType": {
+    "type": "int",
+    "value": 0
+  },
+  "SelectedItemSlot": {
+    "type": "int",
+    "value": 5
+  },
+  "Invulnerable": {
+    "type": "byte",
+    "value": 0
+  },
+  "Paper.Origin": {
+    "type": "list",
+    "value": {
+      "type": "double",
+      "value": [
+        -5.5,
+        95,
+        6.5
+      ]
+    }
+  },
+  "Score": {
+    "type": "int",
+    "value": 49018
+  },
+  "attributes": {
+    "type": "list",
+    "value": {
+      "type": "compound",
+      "value": [
+        {
+          "base": {
+            "type": "double",
+            "value": 3
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:entity_interaction_range"
+          }
+        },
+        {
+          "base": {
+            "type": "double",
+            "value": 1
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:burning_time"
+          }
+        },
+        {
+          "base": {
+            "type": "double",
+            "value": 0
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:armor"
+          }
+        },
+        {
+          "base": {
+            "type": "double",
+            "value": 0.10000000149011612
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:movement_speed"
+          },
+          "modifiers": {
+            "type": "list",
+            "value": {
+              "type": "compound",
+              "value": [
+                {
+                  "operation": {
+                    "type": "string",
+                    "value": "add_multiplied_total"
+                  },
+                  "amount": {
+                    "type": "double",
+                    "value": 0.20000000298023224
+                  },
+                  "id": {
+                    "type": "string",
+                    "value": "minecraft:effect.speed"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "base": {
+            "type": "double",
+            "value": 0
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:max_absorption"
+          }
+        },
+        {
+          "base": {
+            "type": "double",
+            "value": 0.2
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:submerged_mining_speed"
+          }
+        },
+        {
+          "base": {
+            "type": "double",
+            "value": 0
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:sweeping_damage_ratio"
+          }
+        },
+        {
+          "base": {
+            "type": "double",
+            "value": 4
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:attack_speed"
+          }
+        },
+        {
+          "base": {
+            "type": "double",
+            "value": 0
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:armor_toughness"
+          }
+        },
+        {
+          "base": {
+            "type": "double",
+            "value": 60000000
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:waypoint_transmit_range"
+          }
+        },
+        {
+          "base": {
+            "type": "double",
+            "value": 0
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:knockback_resistance"
+          }
+        },
+        {
+          "base": {
+            "type": "double",
+            "value": 1
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:attack_damage"
+          }
+        },
+        {
+          "base": {
+            "type": "double",
+            "value": 0
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:oxygen_bonus"
+          }
+        },
+        {
+          "base": {
+            "type": "double",
+            "value": 0
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:mining_efficiency"
+          }
+        },
+        {
+          "base": {
+            "type": "double",
+            "value": 20
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:max_health"
+          }
+        },
+        {
+          "base": {
+            "type": "double",
+            "value": 4.5
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:block_interaction_range"
+          }
+        }
+      ]
+    }
+  },
+  "Motion": {
+    "type": "list",
+    "value": {
+      "type": "double",
+      "value": [
+        0,
+        -0.04760748099525583,
+        0
+      ]
+    }
+  },
+  "Inventory": {
+    "type": "list",
+    "value": {
+      "type": "compound",
+      "value": [
+        {
+          "Slot": {
+            "type": "byte",
+            "value": 0
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:netherite_sword"
+          },
+          "count": {
+            "type": "int",
+            "value": 1
+          },
+          "components": {
+            "type": "compound",
+            "value": {
+              "minecraft:repair_cost": {
+                "type": "int",
+                "value": 15
+              },
+              "minecraft:enchantments": {
+                "type": "compound",
+                "value": {
+                  "minecraft:mending": {
+                    "type": "int",
+                    "value": 1
+                  },
+                  "minecraft:fire_aspect": {
+                    "type": "int",
+                    "value": 2
+                  },
+                  "minecraft:unbreaking": {
+                    "type": "int",
+                    "value": 3
+                  },
+                  "minecraft:looting": {
+                    "type": "int",
+                    "value": 3
+                  },
+                  "minecraft:sweeping_edge": {
+                    "type": "int",
+                    "value": 3
+                  },
+                  "minecraft:bane_of_arthropods": {
+                    "type": "int",
+                    "value": 4
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "Slot": {
+            "type": "byte",
+            "value": 1
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:netherite_axe"
+          },
+          "count": {
+            "type": "int",
+            "value": 1
+          },
+          "components": {
+            "type": "compound",
+            "value": {
+              "minecraft:repair_cost": {
+                "type": "int",
+                "value": 3
+              },
+              "minecraft:enchantments": {
+                "type": "compound",
+                "value": {
+                  "minecraft:mending": {
+                    "type": "int",
+                    "value": 1
+                  },
+                  "minecraft:efficiency": {
+                    "type": "int",
+                    "value": 4
+                  },
+                  "minecraft:fortune": {
+                    "type": "int",
+                    "value": 2
+                  },
+                  "minecraft:unbreaking": {
+                    "type": "int",
+                    "value": 3
+                  }
+                }
+              },
+              "minecraft:damage": {
+                "type": "int",
+                "value": 808
+              }
+            }
+          }
+        },
+        {
+          "Slot": {
+            "type": "byte",
+            "value": 2
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:netherite_pickaxe"
+          },
+          "count": {
+            "type": "int",
+            "value": 1
+          },
+          "components": {
+            "type": "compound",
+            "value": {
+              "minecraft:repair_cost": {
+                "type": "int",
+                "value": 31
+              },
+              "minecraft:enchantments": {
+                "type": "compound",
+                "value": {
+                  "minecraft:mending": {
+                    "type": "int",
+                    "value": 1
+                  },
+                  "minecraft:fortune": {
+                    "type": "int",
+                    "value": 3
+                  },
+                  "minecraft:efficiency": {
+                    "type": "int",
+                    "value": 4
+                  }
+                }
+              },
+              "minecraft:damage": {
+                "type": "int",
+                "value": 143
+              }
+            }
+          }
+        },
+        {
+          "Slot": {
+            "type": "byte",
+            "value": 3
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:netherite_shovel"
+          },
+          "count": {
+            "type": "int",
+            "value": 1
+          },
+          "components": {
+            "type": "compound",
+            "value": {
+              "minecraft:repair_cost": {
+                "type": "int",
+                "value": 7
+              },
+              "minecraft:enchantments": {
+                "type": "compound",
+                "value": {
+                  "minecraft:mending": {
+                    "type": "int",
+                    "value": 1
+                  },
+                  "minecraft:efficiency": {
+                    "type": "int",
+                    "value": 4
+                  },
+                  "minecraft:silk_touch": {
+                    "type": "int",
+                    "value": 1
+                  },
+                  "minecraft:unbreaking": {
+                    "type": "int",
+                    "value": 3
+                  }
+                }
+              },
+              "minecraft:damage": {
+                "type": "int",
+                "value": 173
+              }
+            }
+          }
+        },
+        {
+          "Slot": {
+            "type": "byte",
+            "value": 4
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:netherite_spear"
+          },
+          "count": {
+            "type": "int",
+            "value": 1
+          },
+          "components": {
+            "type": "compound",
+            "value": {
+              "minecraft:repair_cost": {
+                "type": "int",
+                "value": 3
+              },
+              "minecraft:enchantments": {
+                "type": "compound",
+                "value": {
+                  "minecraft:knockback": {
+                    "type": "int",
+                    "value": 2
+                  },
+                  "minecraft:lunge": {
+                    "type": "int",
+                    "value": 3
+                  },
+                  "minecraft:unbreaking": {
+                    "type": "int",
+                    "value": 3
+                  }
+                }
+              },
+              "minecraft:damage": {
+                "type": "int",
+                "value": 33
+              }
+            }
+          }
+        },
+        {
+          "Slot": {
+            "type": "byte",
+            "value": 5
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:cooked_porkchop"
+          },
+          "count": {
+            "type": "int",
+            "value": 48
+          }
+        },
+        {
+          "Slot": {
+            "type": "byte",
+            "value": 6
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:elytra"
+          },
+          "count": {
+            "type": "int",
+            "value": 1
+          },
+          "components": {
+            "type": "compound",
+            "value": {
+              "minecraft:repair_cost": {
+                "type": "int",
+                "value": 3
+              },
+              "minecraft:enchantments": {
+                "type": "compound",
+                "value": {
+                  "minecraft:mending": {
+                    "type": "int",
+                    "value": 1
+                  },
+                  "minecraft:unbreaking": {
+                    "type": "int",
+                    "value": 3
+                  }
+                }
+              },
+              "minecraft:damage": {
+                "type": "int",
+                "value": 258
+              }
+            }
+          }
+        },
+        {
+          "Slot": {
+            "type": "byte",
+            "value": 7
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:firework_rocket"
+          },
+          "count": {
+            "type": "int",
+            "value": 54
+          }
+        },
+        {
+          "Slot": {
+            "type": "byte",
+            "value": 8
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:fishing_rod"
+          },
+          "count": {
+            "type": "int",
+            "value": 1
+          },
+          "components": {
+            "type": "compound",
+            "value": {
+              "minecraft:damage": {
+                "type": "int",
+                "value": 24
+              }
+            }
+          }
+        },
+        {
+          "Slot": {
+            "type": "byte",
+            "value": 9
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:grass_block"
+          },
+          "count": {
+            "type": "int",
+            "value": 3
+          }
+        },
+        {
+          "Slot": {
+            "type": "byte",
+            "value": 10
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:dirt"
+          },
+          "count": {
+            "type": "int",
+            "value": 3
+          }
+        },
+        {
+          "Slot": {
+            "type": "byte",
+            "value": 11
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:birch_planks"
+          },
+          "count": {
+            "type": "int",
+            "value": 8
+          }
+        },
+        {
+          "Slot": {
+            "type": "byte",
+            "value": 12
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:cherry_planks"
+          },
+          "count": {
+            "type": "int",
+            "value": 30
+          }
+        },
+        {
+          "Slot": {
+            "type": "byte",
+            "value": 13
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:crimson_stem"
+          },
+          "count": {
+            "type": "int",
+            "value": 4
+          }
+        },
+        {
+          "Slot": {
+            "type": "byte",
+            "value": 14
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:bamboo_block"
+          },
+          "count": {
+            "type": "int",
+            "value": 32
+          }
+        },
+        {
+          "Slot": {
+            "type": "byte",
+            "value": 15
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:obsidian"
+          },
+          "count": {
+            "type": "int",
+            "value": 11
+          }
+        },
+        {
+          "Slot": {
+            "type": "byte",
+            "value": 16
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:netherrack"
+          },
+          "count": {
+            "type": "int",
+            "value": 62
+          }
+        },
+        {
+          "Slot": {
+            "type": "byte",
+            "value": 17
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:flint_and_steel"
+          },
+          "count": {
+            "type": "int",
+            "value": 1
+          },
+          "components": {
+            "type": "compound",
+            "value": {
+              "minecraft:damage": {
+                "type": "int",
+                "value": 4
+              }
+            }
+          }
+        },
+        {
+          "Slot": {
+            "type": "byte",
+            "value": 18
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:bow"
+          },
+          "count": {
+            "type": "int",
+            "value": 1
+          },
+          "components": {
+            "type": "compound",
+            "value": {
+              "minecraft:repair_cost": {
+                "type": "int",
+                "value": 31
+              },
+              "minecraft:enchantments": {
+                "type": "compound",
+                "value": {
+                  "minecraft:infinity": {
+                    "type": "int",
+                    "value": 1
+                  },
+                  "minecraft:power": {
+                    "type": "int",
+                    "value": 5
+                  },
+                  "minecraft:flame": {
+                    "type": "int",
+                    "value": 1
+                  },
+                  "minecraft:unbreaking": {
+                    "type": "int",
+                    "value": 3
+                  }
+                }
+              },
+              "minecraft:damage": {
+                "type": "int",
+                "value": 38
+              }
+            }
+          }
+        },
+        {
+          "Slot": {
+            "type": "byte",
+            "value": 19
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:arrow"
+          },
+          "count": {
+            "type": "int",
+            "value": 7
+          }
+        },
+        {
+          "Slot": {
+            "type": "byte",
+            "value": 20
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:emerald"
+          },
+          "count": {
+            "type": "int",
+            "value": 34
+          }
+        },
+        {
+          "Slot": {
+            "type": "byte",
+            "value": 21
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:iron_ingot"
+          },
+          "count": {
+            "type": "int",
+            "value": 3
+          }
+        },
+        {
+          "Slot": {
+            "type": "byte",
+            "value": 22
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:book"
+          },
+          "count": {
+            "type": "int",
+            "value": 18
+          }
+        },
+        {
+          "Slot": {
+            "type": "byte",
+            "value": 23
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:water_bucket"
+          },
+          "count": {
+            "type": "int",
+            "value": 1
+          }
+        },
+        {
+          "Slot": {
+            "type": "byte",
+            "value": 24
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:ender_pearl"
+          },
+          "count": {
+            "type": "int",
+            "value": 4
+          }
+        },
+        {
+          "Slot": {
+            "type": "byte",
+            "value": 25
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:stripped_spruce_log"
+          },
+          "count": {
+            "type": "int",
+            "value": 1
+          }
+        },
+        {
+          "Slot": {
+            "type": "byte",
+            "value": 26
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:firework_rocket"
+          },
+          "count": {
+            "type": "int",
+            "value": 5
+          },
+          "components": {
+            "type": "compound",
+            "value": {
+              "minecraft:fireworks": {
+                "type": "compound",
+                "value": {
+                  "flight_duration": {
+                    "type": "byte",
+                    "value": 2
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "Slot": {
+            "type": "byte",
+            "value": 27
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:firework_rocket"
+          },
+          "count": {
+            "type": "int",
+            "value": 64
+          }
+        },
+        {
+          "Slot": {
+            "type": "byte",
+            "value": 28
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:firework_rocket"
+          },
+          "count": {
+            "type": "int",
+            "value": 64
+          },
+          "components": {
+            "type": "compound",
+            "value": {
+              "minecraft:fireworks": {
+                "type": "compound",
+                "value": {
+                  "flight_duration": {
+                    "type": "byte",
+                    "value": 3
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "Slot": {
+            "type": "byte",
+            "value": 29
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:firework_rocket"
+          },
+          "count": {
+            "type": "int",
+            "value": 64
+          }
+        },
+        {
+          "Slot": {
+            "type": "byte",
+            "value": 31
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:tuff"
+          },
+          "count": {
+            "type": "int",
+            "value": 1
+          }
+        },
+        {
+          "Slot": {
+            "type": "byte",
+            "value": 32
+          },
+          "id": {
+            "type": "string",
+            "value": "minecraft:flow_armor_trim_smithing_template"
+          },
+          "count": {
+            "type": "int",
+            "value": 2
+          }
+        }
+      ]
+    }
+  },
+  "UUID": {
+    "type": "intArray",
+    "value": [
+      1054011617,
+      -1571341198,
+      -1887012522,
+      -1690084565
+    ]
+  },
+  "XpLevel": {
+    "type": "int",
+    "value": 5
+  },
+  "Spigot.ticksLived": {
+    "type": "int",
+    "value": 6602557
+  },
+  "WorldUUIDLeast": {
+    "type": "long",
+    "value": [
+      -1821336175,
+      1464284881
+    ]
+  },
+  "foodLevel": {
+    "type": "int",
+    "value": 20
+  },
+  "LastDeathLocation": {
+    "type": "compound",
+    "value": {
+      "pos": {
+        "type": "intArray",
+        "value": [
+          -1728,
+          80,
+          -3204
+        ]
+      },
+      "dimension": {
+        "type": "string",
+        "value": "minecraft:overworld"
+      }
+    }
+  },
+  "EnderItems": {
+    "type": "list",
+    "value": {
+      "type": "end",
+      "value": []
+    }
+  },
+  "XpP": {
+    "type": "float",
+    "value": 0.6216765642166138
+  },
+  "equipment": {
+    "type": "compound",
+    "value": {
+      "legs": {
+        "type": "compound",
+        "value": {
+          "id": {
+            "type": "string",
+            "value": "minecraft:netherite_leggings"
+          },
+          "count": {
+            "type": "int",
+            "value": 1
+          },
+          "components": {
+            "type": "compound",
+            "value": {
+              "minecraft:repair_cost": {
+                "type": "int",
+                "value": 1
+              },
+              "minecraft:enchantments": {
+                "type": "compound",
+                "value": {
+                  "minecraft:mending": {
+                    "type": "int",
+                    "value": 1
+                  },
+                  "minecraft:unbreaking": {
+                    "type": "int",
+                    "value": 3
+                  },
+                  "minecraft:fire_protection": {
+                    "type": "int",
+                    "value": 4
+                  }
+                }
+              },
+              "minecraft:damage": {
+                "type": "int",
+                "value": 8
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "type": "compound",
+        "value": {
+          "id": {
+            "type": "string",
+            "value": "minecraft:netherite_helmet"
+          },
+          "count": {
+            "type": "int",
+            "value": 1
+          },
+          "components": {
+            "type": "compound",
+            "value": {
+              "minecraft:repair_cost": {
+                "type": "int",
+                "value": 3
+              },
+              "minecraft:enchantments": {
+                "type": "compound",
+                "value": {
+                  "minecraft:mending": {
+                    "type": "int",
+                    "value": 1
+                  },
+                  "minecraft:protection": {
+                    "type": "int",
+                    "value": 4
+                  }
+                }
+              },
+              "minecraft:damage": {
+                "type": "int",
+                "value": 21
+              }
+            }
+          }
+        }
+      },
+      "chest": {
+        "type": "compound",
+        "value": {
+          "id": {
+            "type": "string",
+            "value": "minecraft:netherite_chestplate"
+          },
+          "count": {
+            "type": "int",
+            "value": 1
+          },
+          "components": {
+            "type": "compound",
+            "value": {
+              "minecraft:repair_cost": {
+                "type": "int",
+                "value": 7
+              },
+              "minecraft:enchantments": {
+                "type": "compound",
+                "value": {
+                  "minecraft:mending": {
+                    "type": "int",
+                    "value": 1
+                  },
+                  "minecraft:unbreaking": {
+                    "type": "int",
+                    "value": 2
+                  },
+                  "minecraft:protection": {
+                    "type": "int",
+                    "value": 4
+                  }
+                }
+              },
+              "minecraft:damage": {
+                "type": "int",
+                "value": 4
+              }
+            }
+          }
+        }
+      },
+      "feet": {
+        "type": "compound",
+        "value": {
+          "id": {
+            "type": "string",
+            "value": "minecraft:netherite_boots"
+          },
+          "count": {
+            "type": "int",
+            "value": 1
+          },
+          "components": {
+            "type": "compound",
+            "value": {
+              "minecraft:repair_cost": {
+                "type": "int",
+                "value": 3
+              },
+              "minecraft:enchantments": {
+                "type": "compound",
+                "value": {
+                  "minecraft:mending": {
+                    "type": "int",
+                    "value": 1
+                  },
+                  "minecraft:feather_falling": {
+                    "type": "int",
+                    "value": 4
+                  },
+                  "minecraft:projectile_protection": {
+                    "type": "int",
+                    "value": 3
+                  },
+                  "minecraft:unbreaking": {
+                    "type": "int",
+                    "value": 2
+                  }
+                }
+              },
+              "minecraft:trim": {
+                "type": "compound",
+                "value": {
+                  "material": {
+                    "type": "string",
+                    "value": "minecraft:diamond"
+                  },
+                  "pattern": {
+                    "type": "string",
+                    "value": "minecraft:coast"
+                  }
+                }
+              },
+              "minecraft:damage": {
+                "type": "int",
+                "value": 7
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "Paper": {
+    "type": "compound",
+    "value": {
+      "LastLogin": {
+        "type": "long",
+        "value": [
+          413,
+          258754781
+        ]
+      },
+      "LastSeen": {
+        "type": "long",
+        "value": [
+          413,
+          261492298
+        ]
+      }
+    }
+  },
+  "Fire": {
+    "type": "short",
+    "value": -20
+  },
+  "foodExhaustionLevel": {
+    "type": "float",
+    "value": 0.7897325754165649
+  },
+  "Paper.SpawnReason": {
+    "type": "string",
+    "value": "DEFAULT"
+  },
+  "seenCredits": {
+    "type": "byte",
+    "value": 1
+  },
+  "DeathTime": {
+    "type": "short",
+    "value": 0
+  },
+  "recipeBook": {
+    "type": "compound",
+    "value": {
+      "recipes": {
+        "type": "list",
+        "value": {
+          "type": "string",
+          "value": [
+            "minecraft:wooden_hoe",
+            "minecraft:deepslate_brick_slab",
+            "minecraft:cooked_salmon_from_campfire_cooking",
+            "minecraft:copper_door",
+            "minecraft:mossy_stone_brick_stairs_from_mossy_stone_brick_stonecutting",
+            "minecraft:target",
+            "minecraft:polished_granite_from_granite_stonecutting",
+            "minecraft:bamboo_fence",
+            "minecraft:black_stained_glass",
+            "minecraft:bone_block",
+            "minecraft:nether_brick_slab_from_nether_bricks_stonecutting",
+            "minecraft:cobbled_deepslate_stairs_from_cobbled_deepslate_stonecutting",
+            "minecraft:light_gray_banner",
+            "minecraft:brown_banner",
+            "minecraft:polished_blackstone_bricks_from_blackstone_stonecutting",
+            "minecraft:dye_yellow_carpet",
+            "minecraft:dye_pink_bed",
+            "minecraft:spruce_hanging_sign",
+            "minecraft:polished_granite_stairs_from_granite_stonecutting",
+            "minecraft:baked_potato_from_campfire_cooking",
+            "minecraft:cherry_slab",
+            "minecraft:golden_helmet",
+            "minecraft:granite_stairs",
+            "minecraft:tuff_wall_from_tuff_stonecutting",
+            "minecraft:mossy_cobblestone_stairs",
+            "minecraft:spruce_stairs",
+            "minecraft:magma_cream",
+            "minecraft:copper_boots",
+            "minecraft:cherry_chest_boat",
+            "minecraft:blackstone_slab",
+            "minecraft:beacon",
+            "minecraft:polished_andesite_from_andesite_stonecutting",
+            "minecraft:white_bundle",
+            "minecraft:suspicious_stew_from_cornflower",
+            "minecraft:mossy_stone_brick_wall",
+            "minecraft:deepslate_brick_slab_from_deepslate_bricks_stonecutting",
+            "minecraft:stone_brick_slab",
+            "minecraft:jack_o_lantern",
+            "minecraft:dark_oak_slab",
+            "minecraft:pink_concrete_powder",
+            "minecraft:andesite_stairs",
+            "minecraft:andesite_slab_from_andesite_stonecutting",
+            "minecraft:cherry_door",
+            "minecraft:magenta_dye_from_blue_red_white_dye",
+            "minecraft:gold_nugget_from_blasting",
+            "minecraft:polished_tuff_wall_from_tuff_stonecutting",
+            "minecraft:copper_nugget",
+            "minecraft:end_stone_bricks_from_end_stone_stonecutting",
+            "minecraft:suspicious_stew_from_closed_eyeblossom",
+            "minecraft:white_carpet",
+            "minecraft:white_concrete_powder",
+            "minecraft:bucket",
+            "minecraft:netherite_horse_armor_smithing",
+            "minecraft:lime_concrete_powder",
+            "minecraft:mangrove_chest_boat",
+            "minecraft:cobblestone_stairs_from_cobblestone_stonecutting",
+            "minecraft:snow_block",
+            "minecraft:cracked_stone_bricks",
+            "minecraft:birch_pressure_plate",
+            "minecraft:copper_hoe",
+            "minecraft:deepslate_bricks_from_cobbled_deepslate_stonecutting",
+            "minecraft:iron_boots",
+            "minecraft:stone_brick_slab_from_stone_bricks_stonecutting",
+            "minecraft:redstone",
+            "minecraft:black_harness",
+            "minecraft:mossy_stone_brick_wall_from_mossy_stone_brick_stonecutting",
+            "minecraft:diorite",
+            "minecraft:flow_armor_trim_smithing_template",
+            "minecraft:diamond_leggings",
+            "minecraft:rail",
+            "minecraft:note_block",
+            "minecraft:oak_fence",
+            "minecraft:suspicious_stew_from_poppy",
+            "minecraft:polished_basalt_from_basalt_stonecutting",
+            "minecraft:dark_oak_fence_gate",
+            "minecraft:diamond_block",
+            "minecraft:acacia_chest_boat",
+            "minecraft:coarse_dirt",
+            "minecraft:blackstone_stairs_from_blackstone_stonecutting",
+            "minecraft:birch_sign",
+            "minecraft:hopper",
+            "minecraft:birch_boat",
+            "minecraft:spruce_chest_boat",
+            "minecraft:saddle",
+            "minecraft:crafting_table",
+            "minecraft:blue_dye",
+            "minecraft:cooked_beef_from_smoking",
+            "minecraft:blackstone_stairs",
+            "minecraft:dye_white_wool",
+            "minecraft:red_dye_from_rose_bush",
+            "minecraft:cooked_chicken",
+            "minecraft:birch_trapdoor",
+            "minecraft:amethyst_block",
+            "minecraft:gold_block",
+            "minecraft:andesite_wall_from_andesite_stonecutting",
+            "minecraft:soul_lantern",
+            "minecraft:cherry_planks",
+            "minecraft:oak_wood",
+            "minecraft:diorite_stairs",
+            "minecraft:deepslate_tile_slab_from_deepslate_bricks_stonecutting",
+            "minecraft:spyglass",
+            "minecraft:netherite_nautilus_armor_smithing",
+            "minecraft:ladder",
+            "minecraft:chiseled_stone_bricks_stone_from_stonecutting",
+            "minecraft:coast_armor_trim_smithing_template_smithing_trim",
+            "minecraft:repeater",
+            "minecraft:cooked_salmon_from_smoking",
+            "minecraft:fishing_rod",
+            "minecraft:polished_andesite_stairs_from_andesite_stonecutting",
+            "minecraft:baked_potato",
+            "minecraft:gold_nugget",
+            "minecraft:netherite_pickaxe_smithing",
+            "minecraft:brewing_stand",
+            "minecraft:polished_diorite",
+            "minecraft:crimson_slab",
+            "minecraft:golden_spear",
+            "minecraft:dark_oak_door",
+            "minecraft:blue_harness",
+            "minecraft:polished_granite_slab_from_granite_stonecutting",
+            "minecraft:dark_oak_pressure_plate",
+            "minecraft:jungle_boat",
+            "minecraft:stone_stairs_from_stone_stonecutting",
+            "minecraft:deepslate_brick_wall_from_cobbled_deepslate_stonecutting",
+            "minecraft:leather_boots",
+            "minecraft:birch_fence_gate",
+            "minecraft:white_stained_glass",
+            "minecraft:gray_dye",
+            "minecraft:white_wool_from_string",
+            "minecraft:diamond_pickaxe",
+            "minecraft:wooden_spear",
+            "minecraft:dye_pink_harness",
+            "minecraft:brick",
+            "minecraft:end_stone_brick_slab_from_end_stone_stonecutting",
+            "minecraft:bamboo_raft",
+            "minecraft:diamond_hoe",
+            "minecraft:spruce_fence_gate",
+            "minecraft:soul_campfire",
+            "minecraft:bamboo_trapdoor",
+            "minecraft:chiseled_tuff_from_tuff_stonecutting",
+            "minecraft:lapis_lazuli",
+            "minecraft:diamond",
+            "minecraft:cartography_table",
+            "minecraft:coast_armor_trim_smithing_template",
+            "minecraft:green_stained_glass",
+            "minecraft:chiseled_stone_bricks",
+            "minecraft:painting",
+            "minecraft:pink_dye_from_pink_petals",
+            "minecraft:bamboo_planks",
+            "minecraft:bone_meal",
+            "minecraft:netherite_helmet_smithing",
+            "minecraft:suspicious_stew_from_dandelion",
+            "minecraft:beetroot_soup",
+            "minecraft:fire_charge",
+            "minecraft:polished_deepslate_stairs",
+            "minecraft:brown_harness",
+            "minecraft:netherite_scrap_from_blasting",
+            "minecraft:raw_gold_block",
+            "minecraft:light_gray_dye_from_gray_white_dye",
+            "minecraft:emerald_block",
+            "minecraft:comparator",
+            "minecraft:stone_bricks",
+            "minecraft:granite_stairs_from_granite_stonecutting",
+            "minecraft:tinted_glass",
+            "minecraft:copper_axe",
+            "minecraft:dark_oak_sign",
+            "minecraft:cooked_mutton_from_smoking",
+            "minecraft:cooked_salmon",
+            "minecraft:deepslate_tiles",
+            "minecraft:iron_chain",
+            "minecraft:polished_diorite_slab_from_diorite_stonecutting",
+            "minecraft:dark_oak_chest_boat",
+            "minecraft:bundle",
+            "minecraft:powered_rail",
+            "minecraft:granite_slab",
+            "minecraft:black_concrete_powder",
+            "minecraft:diorite_slab",
+            "minecraft:white_dye",
+            "minecraft:stone",
+            "minecraft:barrel",
+            "minecraft:shield",
+            "minecraft:cooked_porkchop_from_smoking",
+            "minecraft:lead",
+            "minecraft:light_blue_dye_from_blue_orchid",
+            "minecraft:spruce_sign",
+            "minecraft:deepslate_tiles_from_deepslate_bricks_stonecutting",
+            "minecraft:white_harness",
+            "minecraft:deepslate_tiles_from_cobbled_deepslate_stonecutting",
+            "minecraft:birch_button",
+            "minecraft:lever",
+            "minecraft:copper_ingot_from_smelting_raw_copper",
+            "minecraft:tuff_stairs_from_tuff_stonecutting",
+            "minecraft:stone_brick_stairs",
+            "minecraft:respawn_anchor",
+            "minecraft:calibrated_sculk_sensor",
+            "minecraft:dropper",
+            "minecraft:yellow_stained_glass_pane_from_glass_pane",
+            "minecraft:dark_oak_planks",
+            "minecraft:yellow_concrete_powder",
+            "minecraft:smithing_table",
+            "minecraft:blaze_powder",
+            "minecraft:bowl",
+            "minecraft:tuff_brick_slab_from_tuff_stonecutting",
+            "minecraft:cobbled_deepslate_stairs",
+            "minecraft:oak_pressure_plate",
+            "minecraft:deepslate_brick_stairs_from_cobbled_deepslate_stonecutting",
+            "minecraft:red_stained_glass",
+            "minecraft:smooth_stone_slab_from_smooth_stone_stonecutting",
+            "minecraft:cherry_trapdoor",
+            "minecraft:polished_andesite_slab_from_andesite_stonecutting",
+            "minecraft:dispenser",
+            "minecraft:cobblestone_wall",
+            "minecraft:diamond_spear",
+            "minecraft:sandstone",
+            "minecraft:jukebox",
+            "minecraft:golden_leggings",
+            "minecraft:copper_trapdoor",
+            "minecraft:spruce_wood",
+            "minecraft:glass_pane",
+            "minecraft:green_harness",
+            "minecraft:end_stone_brick_stairs_from_end_stone_stonecutting",
+            "minecraft:glow_item_frame",
+            "minecraft:polished_basalt",
+            "minecraft:snow",
+            "minecraft:pink_stained_glass_pane_from_glass_pane",
+            "minecraft:leather_horse_armor",
+            "minecraft:nether_brick_wall_from_nether_bricks_stonecutting",
+            "minecraft:cooked_chicken_from_smoking",
+            "minecraft:daylight_detector",
+            "minecraft:polished_blackstone",
+            "minecraft:stone_shovel",
+            "minecraft:dried_kelp_from_campfire_cooking",
+            "minecraft:black_bed",
+            "minecraft:flint_and_steel",
+            "minecraft:birch_door",
+            "minecraft:polished_blackstone_brick_slab_from_blackstone_stonecutting",
+            "minecraft:light_gray_dye_from_black_white_dye",
+            "minecraft:cooked_beef_from_campfire_cooking",
+            "minecraft:andesite_stairs_from_andesite_stonecutting",
+            "minecraft:copper_bars",
+            "minecraft:birch_stairs",
+            "minecraft:stone_brick_stairs_from_stone_stonecutting",
+            "minecraft:white_stained_glass_pane_from_glass_pane",
+            "minecraft:suspicious_stew_from_azure_bluet",
+            "minecraft:book",
+            "minecraft:yellow_bundle",
+            "minecraft:cherry_pressure_plate",
+            "minecraft:iron_nugget_from_smelting",
+            "minecraft:deepslate_tile_wall_from_cobbled_deepslate_stonecutting",
+            "minecraft:cobblestone_stairs",
+            "minecraft:tuff_bricks_from_tuff_stonecutting",
+            "minecraft:bamboo_sign",
+            "minecraft:brown_concrete_powder",
+            "minecraft:pink_stained_glass",
+            "minecraft:polished_diorite_from_diorite_stonecutting",
+            "minecraft:dye_white_bed",
+            "minecraft:cooked_mutton",
+            "minecraft:stick",
+            "minecraft:yellow_stained_glass",
+            "minecraft:orange_dye_from_red_yellow",
+            "minecraft:netherite_scrap",
+            "minecraft:mushroom_stew",
+            "minecraft:light_blue_dye_from_blue_white_dye",
+            "minecraft:campfire",
+            "minecraft:item_frame",
+            "minecraft:netherite_upgrade_smithing_template",
+            "minecraft:spruce_boat",
+            "minecraft:oak_chest_boat",
+            "minecraft:deepslate_tile_stairs_from_deepslate_bricks_stonecutting",
+            "minecraft:mossy_stone_brick_slab",
+            "minecraft:gray_stained_glass",
+            "minecraft:lantern",
+            "minecraft:mossy_stone_brick_stairs",
+            "minecraft:end_stone_brick_wall_from_end_stone_stonecutting",
+            "minecraft:polished_andesite",
+            "minecraft:nether_brick_stairs",
+            "minecraft:birch_fence",
+            "minecraft:smoker",
+            "minecraft:iron_pickaxe",
+            "minecraft:crimson_planks",
+            "minecraft:loom",
+            "minecraft:copper_leggings",
+            "minecraft:bamboo_mosaic",
+            "minecraft:conduit",
+            "minecraft:birch_planks",
+            "minecraft:mangrove_boat",
+            "minecraft:iron_ingot_from_blasting_raw_iron",
+            "minecraft:blue_dye_from_cornflower",
+            "minecraft:gold_ingot_from_blasting_raw_gold",
+            "minecraft:cauldron",
+            "minecraft:bow",
+            "minecraft:candle",
+            "minecraft:magenta_dye_from_blue_red_pink",
+            "minecraft:cobblestone_wall_from_cobblestone_stonecutting",
+            "minecraft:emerald",
+            "minecraft:bamboo_block",
+            "minecraft:polished_blackstone_brick_stairs_from_blackstone_stonecutting",
+            "minecraft:polished_deepslate_stairs_from_polished_deepslate_stonecutting",
+            "minecraft:light_gray_dye_from_oxeye_daisy",
+            "minecraft:magenta_stained_glass",
+            "minecraft:netherite_axe_smithing",
+            "minecraft:blue_concrete_powder",
+            "minecraft:golden_apple",
+            "minecraft:netherite_leggings_smithing",
+            "minecraft:crimson_trapdoor",
+            "minecraft:bamboo_door",
+            "minecraft:white_bed",
+            "minecraft:tnt_minecart",
+            "minecraft:raw_iron_block",
+            "minecraft:activator_rail",
+            "minecraft:flower_banner_pattern",
+            "minecraft:jungle_chest_boat",
+            "minecraft:deepslate_brick_slab_from_polished_deepslate_stonecutting",
+            "minecraft:deepslate_bricks",
+            "minecraft:spectral_arrow",
+            "minecraft:magenta_dye_from_purple_and_pink",
+            "minecraft:lectern",
+            "minecraft:iron_ingot_from_nuggets",
+            "minecraft:oak_button",
+            "minecraft:spruce_pressure_plate",
+            "minecraft:chest",
+            "minecraft:bread",
+            "minecraft:polished_tuff",
+            "minecraft:diorite_wall_from_diorite_stonecutting",
+            "minecraft:copper_sword",
+            "minecraft:minecart",
+            "minecraft:diamond_boots",
+            "minecraft:leather_leggings",
+            "minecraft:cherry_fence_gate",
+            "minecraft:detector_rail",
+            "minecraft:netherite_spear_smithing",
+            "minecraft:netherite_shovel_smithing",
+            "minecraft:cooked_porkchop_from_campfire_cooking",
+            "minecraft:redstone_torch",
+            "minecraft:cooked_chicken_from_campfire_cooking",
+            "minecraft:cracked_nether_bricks",
+            "minecraft:crimson_stairs",
+            "minecraft:polished_deepslate_wall_from_polished_deepslate_stonecutting",
+            "minecraft:red_dye_from_poppy",
+            "minecraft:oak_trapdoor",
+            "minecraft:netherite_boots_smithing",
+            "minecraft:tripwire_hook",
+            "minecraft:smooth_stone_slab",
+            "minecraft:flow_armor_trim_smithing_template_smithing_trim",
+            "minecraft:polished_blackstone_wall_from_blackstone_stonecutting",
+            "minecraft:oak_sign",
+            "minecraft:baked_potato_from_smoking",
+            "minecraft:stone_bricks_from_stone_stonecutting",
+            "minecraft:polished_deepslate_wall",
+            "minecraft:dye_yellow_harness",
+            "minecraft:stone_button",
+            "minecraft:lightning_rod",
+            "minecraft:leather_helmet",
+            "minecraft:heavy_weighted_pressure_plate",
+            "minecraft:spruce_slab",
+            "minecraft:iron_chestplate",
+            "minecraft:cherry_fence",
+            "minecraft:deepslate_brick_slab_from_cobbled_deepslate_stonecutting",
+            "minecraft:oak_door",
+            "minecraft:netherite_ingot",
+            "minecraft:bamboo_fence_gate",
+            "minecraft:polished_deepslate",
+            "minecraft:deepslate_tile_wall_from_deepslate_bricks_stonecutting",
+            "minecraft:anvil",
+            "minecraft:cooked_mutton_from_campfire_cooking",
+            "minecraft:light_gray_harness",
+            "minecraft:blackstone_slab_from_blackstone_stonecutting",
+            "minecraft:warped_fungus_on_a_stick",
+            "minecraft:bamboo_button",
+            "minecraft:tuff_slab",
+            "minecraft:golden_shovel",
+            "minecraft:pumpkin_pie",
+            "minecraft:copper_ingot_from_blasting_raw_copper",
+            "minecraft:charcoal",
+            "minecraft:bone_meal_from_bone_block",
+            "minecraft:dark_oak_wood",
+            "minecraft:chiseled_tuff_bricks_from_tuff_stonecutting",
+            "minecraft:polished_deepslate_wall_from_cobbled_deepslate_stonecutting",
+            "minecraft:bamboo_slab",
+            "minecraft:chiseled_bookshelf",
+            "minecraft:iron_axe",
+            "minecraft:deepslate_tile_slab_from_cobbled_deepslate_stonecutting",
+            "minecraft:paper",
+            "minecraft:golden_carrot",
+            "minecraft:tuff_slab_from_tuff_stonecutting",
+            "minecraft:cracked_deepslate_bricks",
+            "minecraft:cyan_concrete_powder",
+            "minecraft:polished_tuff_from_tuff_stonecutting",
+            "minecraft:glowstone",
+            "minecraft:pale_oak_planks",
+            "minecraft:skull_banner_pattern",
+            "minecraft:red_nether_bricks",
+            "minecraft:stone_slab",
+            "minecraft:coal_block",
+            "minecraft:diorite_wall",
+            "minecraft:torch",
+            "minecraft:fletching_table",
+            "minecraft:polished_granite",
+            "minecraft:nether_brick_stairs_from_nether_bricks_stonecutting",
+            "minecraft:orange_concrete_powder",
+            "minecraft:granite_slab_from_granite_stonecutting",
+            "minecraft:orange_stained_glass",
+            "minecraft:glass",
+            "minecraft:golden_chestplate",
+            "minecraft:netherite_chestplate_smithing",
+            "minecraft:pink_dye_from_red_white_dye",
+            "minecraft:copper_nugget_from_smelting",
+            "minecraft:granite_wall",
+            "minecraft:dye_white_carpet",
+            "minecraft:cobbled_deepslate_wall",
+            "minecraft:dark_oak_boat",
+            "minecraft:dye_white_harness",
+            "minecraft:terracotta",
+            "minecraft:iron_leggings",
+            "minecraft:cobbled_deepslate_slab",
+            "minecraft:dark_oak_fence",
+            "minecraft:blue_stained_glass",
+            "minecraft:birch_wood",
+            "minecraft:arrow",
+            "minecraft:golden_hoe",
+            "minecraft:bookshelf",
+            "minecraft:cherry_wood",
+            "minecraft:raw_copper_block",
+            "minecraft:observer",
+            "minecraft:crimson_door",
+            "minecraft:clay",
+            "minecraft:mossy_cobblestone_slab",
+            "minecraft:slime_block",
+            "minecraft:iron_spear",
+            "minecraft:wooden_shovel",
+            "minecraft:black_dye_from_wither_rose",
+            "minecraft:polished_deepslate_from_cobbled_deepslate_stonecutting",
+            "minecraft:compass",
+            "minecraft:tuff_wall",
+            "minecraft:dark_oak_stairs",
+            "minecraft:orange_harness",
+            "minecraft:nether_brick_slab",
+            "minecraft:dye_pink_carpet",
+            "minecraft:suspicious_stew_from_blue_orchid",
+            "minecraft:cobbled_deepslate_wall_from_cobbled_deepslate_stonecutting",
+            "minecraft:black_carpet",
+            "minecraft:light_gray_stained_glass",
+            "minecraft:suspicious_stew_from_wither_rose",
+            "minecraft:tuff_brick_wall_from_tuff_stonecutting",
+            "minecraft:spruce_shelf",
+            "minecraft:lime_dye",
+            "minecraft:stone_slab_from_stone_stonecutting",
+            "minecraft:brown_carpet",
+            "minecraft:suspicious_stew_from_oxeye_daisy",
+            "minecraft:mossy_stone_brick_slab_from_mossy_stone_brick_stonecutting",
+            "minecraft:deepslate_brick_wall",
+            "minecraft:purple_concrete_powder",
+            "minecraft:copper_shovel",
+            "minecraft:polished_blackstone_stairs_from_blackstone_stonecutting",
+            "minecraft:netherite_block",
+            "minecraft:polished_diorite_stairs_from_diorite_stonecutting",
+            "minecraft:copper_block",
+            "minecraft:polished_blackstone_slab_from_blackstone_stonecutting",
+            "minecraft:diamond_helmet",
+            "minecraft:deepslate_brick_stairs_from_deepslate_bricks_stonecutting",
+            "minecraft:stone_spear",
+            "minecraft:bamboo_chest_raft",
+            "minecraft:stone_sword",
+            "minecraft:tnt",
+            "minecraft:copper_spear",
+            "minecraft:gray_harness",
+            "minecraft:diamond_axe",
+            "minecraft:pink_harness",
+            "minecraft:diamond_chestplate",
+            "minecraft:andesite_wall",
+            "minecraft:trapped_chest",
+            "minecraft:cyan_harness",
+            "minecraft:stone_hoe",
+            "minecraft:leather_chestplate",
+            "minecraft:golden_pickaxe",
+            "minecraft:brown_stained_glass",
+            "minecraft:magenta_concrete_powder",
+            "minecraft:cherry_button",
+            "minecraft:lodestone",
+            "minecraft:enchanting_table",
+            "minecraft:dark_oak_button",
+            "minecraft:green_concrete_powder",
+            "minecraft:lapis_block",
+            "minecraft:red_harness",
+            "minecraft:black_banner",
+            "minecraft:light_gray_dye_from_azure_bluet",
+            "minecraft:stripped_spruce_wood",
+            "minecraft:iron_nugget",
+            "minecraft:glass_bottle",
+            "minecraft:stone_brick_stairs_from_stone_bricks_stonecutting",
+            "minecraft:iron_sword",
+            "minecraft:crimson_button",
+            "minecraft:cherry_sign",
+            "minecraft:dried_kelp_from_smelting",
+            "minecraft:birch_chest_boat",
+            "minecraft:redstone_block",
+            "minecraft:iron_door",
+            "minecraft:carrot_on_a_stick",
+            "minecraft:nether_bricks",
+            "minecraft:copper_pickaxe",
+            "minecraft:composter",
+            "minecraft:cherry_boat",
+            "minecraft:light_blue_stained_glass",
+            "minecraft:birch_slab",
+            "minecraft:nether_wart_block",
+            "minecraft:bamboo_stairs",
+            "minecraft:cooked_porkchop",
+            "minecraft:crimson_fence_gate",
+            "minecraft:crimson_sign",
+            "minecraft:pale_oak_wood",
+            "minecraft:spruce_fence",
+            "minecraft:spruce_planks",
+            "minecraft:oak_slab",
+            "minecraft:deepslate_tile_stairs_from_polished_deepslate_stonecutting",
+            "minecraft:shears",
+            "minecraft:deepslate_brick_wall_from_polished_deepslate_stonecutting",
+            "minecraft:iron_bars",
+            "minecraft:yellow_harness",
+            "minecraft:netherite_hoe_smithing",
+            "minecraft:firework_rocket_simple",
+            "minecraft:wheat",
+            "minecraft:gray_dye_from_closed_eyeblossom",
+            "minecraft:copper_nugget_from_blasting",
+            "minecraft:red_dye_from_beetroot",
+            "minecraft:golden_sword",
+            "minecraft:cooked_beef",
+            "minecraft:tuff_brick_stairs_from_tuff_stonecutting",
+            "minecraft:pale_oak_chest_boat",
+            "minecraft:iron_nugget_from_blasting",
+            "minecraft:diamond_shovel",
+            "minecraft:yellow_candle",
+            "minecraft:light_gray_carpet",
+            "minecraft:spruce_door",
+            "minecraft:mossy_cobblestone_slab_from_mossy_cobblestone_stonecutting",
+            "minecraft:light_blue_concrete_powder",
+            "minecraft:mossy_cobblestone_stairs_from_mossy_cobblestone_stonecutting",
+            "minecraft:andesite_slab",
+            "minecraft:mossy_cobblestone_wall_from_mossy_cobblestone_stonecutting",
+            "minecraft:clock",
+            "minecraft:pale_oak_boat",
+            "minecraft:nether_brick",
+            "minecraft:hay_block",
+            "minecraft:diorite_slab_from_diorite_stonecutting",
+            "minecraft:spruce_trapdoor",
+            "minecraft:cobblestone_slab",
+            "minecraft:nether_brick_wall",
+            "minecraft:stick_from_bamboo_item",
+            "minecraft:wooden_pickaxe",
+            "minecraft:chiseled_deepslate_from_cobbled_deepslate_stonecutting",
+            "minecraft:stonecutter",
+            "minecraft:dried_kelp_from_smoking",
+            "minecraft:gold_ingot_from_nuggets",
+            "minecraft:polished_tuff_stairs_from_tuff_stonecutting",
+            "minecraft:blackstone_wall",
+            "minecraft:end_stone_bricks",
+            "minecraft:cobbled_deepslate_slab_from_cobbled_deepslate_stonecutting",
+            "minecraft:purple_stained_glass",
+            "minecraft:cyan_stained_glass",
+            "minecraft:white_banner",
+            "minecraft:furnace_minecart",
+            "minecraft:deepslate_bricks_from_polished_deepslate_stonecutting",
+            "minecraft:acacia_boat",
+            "minecraft:sticky_piston",
+            "minecraft:deepslate_tile_wall_from_polished_deepslate_stonecutting",
+            "minecraft:blue_ice",
+            "minecraft:red_concrete_powder",
+            "minecraft:andesite",
+            "minecraft:armor_stand",
+            "minecraft:deepslate_brick_wall_from_deepslate_bricks_stonecutting",
+            "minecraft:crafter",
+            "minecraft:polished_deepslate_slab_from_cobbled_deepslate_stonecutting",
+            "minecraft:oak_boat",
+            "minecraft:oak_fence_gate",
+            "minecraft:scaffolding",
+            "minecraft:white_candle",
+            "minecraft:stone_brick_walls_from_stone_stonecutting",
+            "minecraft:polished_blackstone_brick_wall_from_blackstone_stonecutting",
+            "minecraft:polished_blackstone_from_blackstone_stonecutting",
+            "minecraft:polished_tuff_slab_from_tuff_stonecutting",
+            "minecraft:light_weighted_pressure_plate",
+            "minecraft:quartz_block",
+            "minecraft:golden_boots",
+            "minecraft:diamond_sword",
+            "minecraft:brush",
+            "minecraft:sugar_from_sugar_cane",
+            "minecraft:deepslate",
+            "minecraft:gray_concrete_powder",
+            "minecraft:polished_deepslate_stairs_from_cobbled_deepslate_stonecutting",
+            "minecraft:slime_ball",
+            "minecraft:hopper_minecart",
+            "minecraft:iron_ingot_from_smelting_raw_iron",
+            "minecraft:deepslate_tiles_from_polished_deepslate_stonecutting",
+            "minecraft:crossbow",
+            "minecraft:dye_yellow_bed",
+            "minecraft:granite",
+            "minecraft:writable_book",
+            "minecraft:mossy_cobblestone_wall",
+            "minecraft:soul_torch",
+            "minecraft:crimson_fence",
+            "minecraft:chiseled_nether_bricks_from_nether_bricks_stonecutting",
+            "minecraft:blackstone_wall_from_blackstone_stonecutting",
+            "minecraft:cake",
+            "minecraft:dye_pink_wool",
+            "minecraft:cherry_stairs",
+            "minecraft:deepslate_brick_stairs",
+            "minecraft:deepslate_tile_stairs_from_cobbled_deepslate_stonecutting",
+            "minecraft:iron_helmet",
+            "minecraft:nether_brick_fence",
+            "minecraft:lime_harness",
+            "minecraft:deepslate_tile_slab_from_polished_deepslate_stonecutting",
+            "minecraft:dark_oak_trapdoor",
+            "minecraft:iron_hoe",
+            "minecraft:fermented_spider_eye",
+            "minecraft:light_gray_bed",
+            "minecraft:wooden_axe",
+            "minecraft:spruce_button",
+            "minecraft:iron_ingot_from_iron_block",
+            "minecraft:golden_axe",
+            "minecraft:piston",
+            "minecraft:stone_brick_wall",
+            "minecraft:iron_shovel",
+            "minecraft:light_blue_harness",
+            "minecraft:copper_chain",
+            "minecraft:dye_yellow_wool",
+            "minecraft:diorite_stairs_from_diorite_stonecutting",
+            "minecraft:gold_ingot_from_smelting_raw_gold",
+            "minecraft:tuff_stairs",
+            "minecraft:stone_pressure_plate",
+            "minecraft:deepslate_brick_stairs_from_polished_deepslate_stonecutting",
+            "minecraft:copper_helmet",
+            "minecraft:netherite_sword_smithing",
+            "minecraft:smooth_basalt",
+            "minecraft:brown_bed",
+            "minecraft:granite_wall_from_granite_stonecutting",
+            "minecraft:stone_brick_slab_from_stone_stonecutting",
+            "minecraft:chiseled_polished_blackstone_from_blackstone_stonecutting",
+            "minecraft:crimson_pressure_plate",
+            "minecraft:bamboo_pressure_plate",
+            "minecraft:pink_bundle",
+            "minecraft:purple_harness",
+            "minecraft:oak_planks",
+            "minecraft:pink_candle",
+            "minecraft:furnace",
+            "minecraft:yellow_dye_from_dandelion",
+            "minecraft:oak_stairs",
+            "minecraft:magenta_harness",
+            "minecraft:cobblestone_slab_from_cobblestone_stonecutting",
+            "minecraft:iron_trapdoor",
+            "minecraft:ender_eye",
+            "minecraft:smooth_stone",
+            "minecraft:gold_nugget_from_smelting",
+            "minecraft:blast_furnace",
+            "minecraft:stone_axe",
+            "minecraft:wooden_sword",
+            "minecraft:iron_block",
+            "minecraft:stone_pickaxe",
+            "minecraft:lime_stained_glass",
+            "minecraft:stone_stairs",
+            "minecraft:polished_deepslate_slab",
+            "minecraft:copper_chestplate",
+            "minecraft:crimson_hyphae",
+            "minecraft:light_gray_concrete_powder",
+            "minecraft:stone_brick_wall_from_stone_bricks_stonecutting",
+            "minecraft:chest_minecart",
+            "minecraft:chiseled_deepslate",
+            "minecraft:polished_deepslate_slab_from_polished_deepslate_stonecutting",
+            "minecraft:chiseled_stone_bricks_from_stone_bricks_stonecutting"
+          ]
+        }
+      },
+      "isGuiOpen": {
+        "type": "byte",
+        "value": 1
+      },
+      "toBeDisplayed": {
+        "type": "list",
+        "value": {
+          "type": "string",
+          "value": [
+            "minecraft:cooked_salmon_from_campfire_cooking",
+            "minecraft:diorite_wall_from_diorite_stonecutting",
+            "minecraft:mossy_stone_brick_stairs_from_mossy_stone_brick_stonecutting",
+            "minecraft:polished_granite_from_granite_stonecutting",
+            "minecraft:nether_brick_slab_from_nether_bricks_stonecutting",
+            "minecraft:netherite_shovel_smithing",
+            "minecraft:netherite_spear_smithing",
+            "minecraft:crimson_stairs",
+            "minecraft:cracked_nether_bricks",
+            "minecraft:cooked_porkchop_from_campfire_cooking",
+            "minecraft:cooked_chicken_from_campfire_cooking",
+            "minecraft:cobbled_deepslate_stairs_from_cobbled_deepslate_stonecutting",
+            "minecraft:polished_blackstone_bricks_from_blackstone_stonecutting",
+            "minecraft:polished_deepslate_wall_from_polished_deepslate_stonecutting",
+            "minecraft:spruce_hanging_sign",
+            "minecraft:netherite_boots_smithing",
+            "minecraft:polished_granite_stairs_from_granite_stonecutting",
+            "minecraft:flow_armor_trim_smithing_template_smithing_trim",
+            "minecraft:baked_potato_from_campfire_cooking",
+            "minecraft:polished_blackstone_wall_from_blackstone_stonecutting",
+            "minecraft:stone_bricks_from_stone_stonecutting",
+            "minecraft:baked_potato_from_smoking",
+            "minecraft:tuff_wall_from_tuff_stonecutting",
+            "minecraft:polished_andesite_from_andesite_stonecutting",
+            "minecraft:deepslate_brick_slab_from_deepslate_bricks_stonecutting",
+            "minecraft:deepslate_tile_wall_from_deepslate_bricks_stonecutting",
+            "minecraft:deepslate_brick_slab_from_cobbled_deepslate_stonecutting",
+            "minecraft:blackstone_slab_from_blackstone_stonecutting",
+            "minecraft:cooked_mutton_from_campfire_cooking",
+            "minecraft:charcoal",
+            "minecraft:copper_ingot_from_blasting_raw_copper",
+            "minecraft:gold_nugget_from_blasting",
+            "minecraft:andesite_slab_from_andesite_stonecutting",
+            "minecraft:chiseled_tuff_bricks_from_tuff_stonecutting",
+            "minecraft:polished_tuff_wall_from_tuff_stonecutting",
+            "minecraft:end_stone_bricks_from_end_stone_stonecutting",
+            "minecraft:polished_deepslate_wall_from_cobbled_deepslate_stonecutting",
+            "minecraft:deepslate_tile_slab_from_cobbled_deepslate_stonecutting",
+            "minecraft:netherite_horse_armor_smithing",
+            "minecraft:tuff_slab_from_tuff_stonecutting",
+            "minecraft:cracked_deepslate_bricks",
+            "minecraft:polished_tuff_from_tuff_stonecutting",
+            "minecraft:flow_armor_trim_smithing_template",
+            "minecraft:cobblestone_stairs_from_cobblestone_stonecutting",
+            "minecraft:deepslate_bricks_from_cobbled_deepslate_stonecutting",
+            "minecraft:cracked_stone_bricks",
+            "minecraft:stone_brick_slab_from_stone_bricks_stonecutting",
+            "minecraft:mossy_stone_brick_wall_from_mossy_stone_brick_stonecutting",
+            "minecraft:nether_brick_stairs_from_nether_bricks_stonecutting",
+            "minecraft:granite_slab_from_granite_stonecutting",
+            "minecraft:polished_basalt_from_basalt_stonecutting",
+            "minecraft:glass",
+            "minecraft:blackstone_stairs_from_blackstone_stonecutting",
+            "minecraft:netherite_chestplate_smithing",
+            "minecraft:copper_nugget_from_smelting",
+            "minecraft:terracotta",
+            "minecraft:cooked_beef_from_smoking",
+            "minecraft:cooked_chicken",
+            "minecraft:crimson_door",
+            "minecraft:andesite_wall_from_andesite_stonecutting",
+            "minecraft:polished_deepslate_from_cobbled_deepslate_stonecutting",
+            "minecraft:deepslate_tile_slab_from_deepslate_bricks_stonecutting",
+            "minecraft:netherite_nautilus_armor_smithing",
+            "minecraft:chiseled_stone_bricks_stone_from_stonecutting",
+            "minecraft:coast_armor_trim_smithing_template_smithing_trim",
+            "minecraft:cooked_salmon_from_smoking",
+            "minecraft:cobbled_deepslate_wall_from_cobbled_deepslate_stonecutting",
+            "minecraft:polished_andesite_stairs_from_andesite_stonecutting",
+            "minecraft:black_carpet",
+            "minecraft:baked_potato",
+            "minecraft:netherite_pickaxe_smithing",
+            "minecraft:tuff_brick_wall_from_tuff_stonecutting",
+            "minecraft:suspicious_stew_from_wither_rose",
+            "minecraft:crimson_slab",
+            "minecraft:spruce_shelf",
+            "minecraft:stone_slab_from_stone_stonecutting",
+            "minecraft:polished_granite_slab_from_granite_stonecutting",
+            "minecraft:mossy_stone_brick_slab_from_mossy_stone_brick_stonecutting",
+            "minecraft:stone_stairs_from_stone_stonecutting",
+            "minecraft:deepslate_brick_wall_from_cobbled_deepslate_stonecutting",
+            "minecraft:polished_blackstone_stairs_from_blackstone_stonecutting",
+            "minecraft:polished_diorite_stairs_from_diorite_stonecutting",
+            "minecraft:polished_blackstone_slab_from_blackstone_stonecutting",
+            "minecraft:deepslate_brick_stairs_from_deepslate_bricks_stonecutting",
+            "minecraft:brick",
+            "minecraft:end_stone_brick_slab_from_end_stone_stonecutting",
+            "minecraft:chiseled_tuff_from_tuff_stonecutting",
+            "minecraft:netherite_helmet_smithing",
+            "minecraft:stripped_spruce_wood",
+            "minecraft:black_banner",
+            "minecraft:netherite_scrap_from_blasting",
+            "minecraft:stone_brick_stairs_from_stone_bricks_stonecutting",
+            "minecraft:dried_kelp_from_smelting",
+            "minecraft:granite_stairs_from_granite_stonecutting",
+            "minecraft:cooked_mutton_from_smoking",
+            "minecraft:cooked_salmon",
+            "minecraft:polished_diorite_slab_from_diorite_stonecutting",
+            "minecraft:crimson_sign",
+            "minecraft:crimson_fence_gate",
+            "minecraft:cooked_porkchop",
+            "minecraft:stone",
+            "minecraft:cooked_porkchop_from_smoking",
+            "minecraft:deepslate_tile_stairs_from_polished_deepslate_stonecutting",
+            "minecraft:deepslate_brick_wall_from_polished_deepslate_stonecutting",
+            "minecraft:netherite_hoe_smithing",
+            "minecraft:deepslate_tiles_from_deepslate_bricks_stonecutting",
+            "minecraft:deepslate_tiles_from_cobbled_deepslate_stonecutting",
+            "minecraft:copper_nugget_from_blasting",
+            "minecraft:tuff_brick_stairs_from_tuff_stonecutting",
+            "minecraft:iron_nugget_from_blasting",
+            "minecraft:cooked_beef",
+            "minecraft:copper_ingot_from_smelting_raw_copper",
+            "minecraft:diorite_slab_from_diorite_stonecutting",
+            "minecraft:mossy_cobblestone_stairs_from_mossy_cobblestone_stonecutting",
+            "minecraft:mossy_cobblestone_slab_from_mossy_cobblestone_stonecutting",
+            "minecraft:tuff_stairs_from_tuff_stonecutting",
+            "minecraft:mossy_cobblestone_wall_from_mossy_cobblestone_stonecutting",
+            "minecraft:nether_brick",
+            "minecraft:chiseled_deepslate_from_cobbled_deepslate_stonecutting",
+            "minecraft:tuff_brick_slab_from_tuff_stonecutting",
+            "minecraft:deepslate_brick_stairs_from_cobbled_deepslate_stonecutting",
+            "minecraft:dried_kelp_from_smoking",
+            "minecraft:smooth_stone_slab_from_smooth_stone_stonecutting",
+            "minecraft:polished_tuff_stairs_from_tuff_stonecutting",
+            "minecraft:polished_andesite_slab_from_andesite_stonecutting",
+            "minecraft:cobbled_deepslate_slab_from_cobbled_deepslate_stonecutting",
+            "minecraft:deepslate_bricks_from_polished_deepslate_stonecutting",
+            "minecraft:deepslate_tile_wall_from_polished_deepslate_stonecutting",
+            "minecraft:end_stone_brick_stairs_from_end_stone_stonecutting",
+            "minecraft:deepslate_brick_wall_from_deepslate_bricks_stonecutting",
+            "minecraft:nether_brick_wall_from_nether_bricks_stonecutting",
+            "minecraft:polished_deepslate_slab_from_cobbled_deepslate_stonecutting",
+            "minecraft:cooked_chicken_from_smoking",
+            "minecraft:stone_brick_walls_from_stone_stonecutting",
+            "minecraft:polished_blackstone_brick_wall_from_blackstone_stonecutting",
+            "minecraft:polished_blackstone_from_blackstone_stonecutting",
+            "minecraft:dried_kelp_from_campfire_cooking",
+            "minecraft:black_bed",
+            "minecraft:polished_tuff_slab_from_tuff_stonecutting",
+            "minecraft:polished_blackstone_brick_slab_from_blackstone_stonecutting",
+            "minecraft:cooked_beef_from_campfire_cooking",
+            "minecraft:andesite_stairs_from_andesite_stonecutting",
+            "minecraft:stone_brick_stairs_from_stone_stonecutting",
+            "minecraft:deepslate_tile_wall_from_cobbled_deepslate_stonecutting",
+            "minecraft:deepslate",
+            "minecraft:tuff_bricks_from_tuff_stonecutting",
+            "minecraft:iron_nugget_from_smelting",
+            "minecraft:polished_deepslate_stairs_from_cobbled_deepslate_stonecutting",
+            "minecraft:iron_ingot_from_smelting_raw_iron",
+            "minecraft:deepslate_tiles_from_polished_deepslate_stonecutting",
+            "minecraft:polished_diorite_from_diorite_stonecutting",
+            "minecraft:crimson_fence",
+            "minecraft:chiseled_nether_bricks_from_nether_bricks_stonecutting",
+            "minecraft:blackstone_wall_from_blackstone_stonecutting",
+            "minecraft:cooked_mutton",
+            "minecraft:netherite_scrap",
+            "minecraft:deepslate_tile_stairs_from_cobbled_deepslate_stonecutting",
+            "minecraft:deepslate_tile_slab_from_polished_deepslate_stonecutting",
+            "minecraft:deepslate_tile_stairs_from_deepslate_bricks_stonecutting",
+            "minecraft:end_stone_brick_wall_from_end_stone_stonecutting",
+            "minecraft:gold_ingot_from_smelting_raw_gold",
+            "minecraft:deepslate_brick_stairs_from_polished_deepslate_stonecutting",
+            "minecraft:diorite_stairs_from_diorite_stonecutting",
+            "minecraft:netherite_sword_smithing",
+            "minecraft:smooth_basalt",
+            "minecraft:chiseled_polished_blackstone_from_blackstone_stonecutting",
+            "minecraft:granite_wall_from_granite_stonecutting",
+            "minecraft:stone_brick_slab_from_stone_stonecutting",
+            "minecraft:gold_ingot_from_blasting_raw_gold",
+            "minecraft:iron_ingot_from_blasting_raw_iron",
+            "minecraft:crimson_trapdoor",
+            "minecraft:cobblestone_wall_from_cobblestone_stonecutting",
+            "minecraft:polished_deepslate_stairs_from_polished_deepslate_stonecutting",
+            "minecraft:polished_blackstone_brick_stairs_from_blackstone_stonecutting",
+            "minecraft:cobblestone_slab_from_cobblestone_stonecutting",
+            "minecraft:smooth_stone",
+            "minecraft:netherite_axe_smithing",
+            "minecraft:gold_nugget_from_smelting",
+            "minecraft:netherite_leggings_smithing",
+            "minecraft:stone_brick_wall_from_stone_bricks_stonecutting",
+            "minecraft:deepslate_brick_slab_from_polished_deepslate_stonecutting",
+            "minecraft:polished_deepslate_slab_from_polished_deepslate_stonecutting",
+            "minecraft:chiseled_stone_bricks_from_stone_bricks_stonecutting"
+          ]
+        }
+      },
+      "isFilteringCraftable": {
+        "type": "byte",
+        "value": 1
+      }
+    }
+  },
+  "OnGround": {
+    "type": "byte",
+    "value": 1
+  },
+  "spawn_extra_particles_on_fall": {
+    "type": "byte",
+    "value": 0
+  },
+  "Brain": {
+    "type": "compound",
+    "value": {
+      "memories": {
+        "type": "compound",
+        "value": {}
+      }
+    }
+  },
+  "Dimension": {
+    "type": "string",
+    "value": "minecraft:overworld"
+  },
+  "bukkit": {
+    "type": "compound",
+    "value": {
+      "newTotalExp": {
+        "type": "int",
+        "value": 0
+      },
+      "newLevel": {
+        "type": "int",
+        "value": 0
+      },
+      "newExp": {
+        "type": "int",
+        "value": 0
+      },
+      "keepLevel": {
+        "type": "byte",
+        "value": 0
+      },
+      "lastPlayed": {
+        "type": "long",
+        "value": [
+          413,
+          261492298
+        ]
+      },
+      "firstPlayed": {
+        "type": "long",
+        "value": [
+          412,
+          -648283190
+        ]
+      },
+      "expToDrop": {
+        "type": "int",
+        "value": 0
+      },
+      "lastKnownName": {
+        "type": "string",
+        "value": "PurvalMC"
+      }
+    }
+  },
+  "abilities": {
+    "type": "compound",
+    "value": {
+      "walkSpeed": {
+        "type": "float",
+        "value": 0.10000000149011612
+      },
+      "flySpeed": {
+        "type": "float",
+        "value": 0.05000000074505806
+      },
+      "instabuild": {
+        "type": "byte",
+        "value": 0
+      },
+      "flying": {
+        "type": "byte",
+        "value": 0
+      },
+      "mayfly": {
+        "type": "byte",
+        "value": 0
+      },
+      "invulnerable": {
+        "type": "byte",
+        "value": 0
+      },
+      "mayBuild": {
+        "type": "byte",
+        "value": 1
+      }
+    }
+  },
+  "Rotation": {
+    "type": "list",
+    "value": {
+      "type": "float",
+      "value": [
+        19.263916015625,
+        55.4999885559082
+      ]
+    }
+  },
+  "HurtByTimestamp": {
+    "type": "int",
+    "value": 52008
+  },
+  "WorldUUIDMost": {
+    "type": "long",
+    "value": [
+      1365717235,
+      1441745014
+    ]
+  },
+  "foodSaturationLevel": {
+    "type": "float",
+    "value": 0
+  },
+  "respawn": {
+    "type": "compound",
+    "value": {
+      "pos": {
+        "type": "intArray",
+        "value": [
+          -1731,
+          78,
+          -3214
+        ]
+      },
+      "pitch": {
+        "type": "float",
+        "value": 51.29999923706055
+      },
+      "yaw": {
+        "type": "float",
+        "value": 63.663818359375
+      },
+      "dimension": {
+        "type": "string",
+        "value": "minecraft:overworld"
+      }
+    }
+  },
+  "fall_distance": {
+    "type": "double",
+    "value": 0
+  },
+  "Air": {
+    "type": "short",
+    "value": 300
+  },
+  "XpSeed": {
+    "type": "int",
+    "value": -856664159
+  },
+  "FallFlying": {
+    "type": "byte",
+    "value": 0
+  },
+  "DataVersion": {
+    "type": "int",
+    "value": 4671
+  },
+  "SleepTimer": {
+    "type": "short",
+    "value": 0
+  },
+  "HurtTime": {
+    "type": "short",
+    "value": 0
+  },
+  "warden_spawn_tracker": {
+    "type": "compound",
+    "value": {
+      "ticks_since_last_warning": {
+        "type": "int",
+        "value": 1851
+      },
+      "warning_level": {
+        "type": "int",
+        "value": 0
+      },
+      "cooldown_ticks": {
+        "type": "int",
+        "value": 0
+      }
+    }
+  },
+  "Health": {
+    "type": "float",
+    "value": 20
+  },
+  "previousPlayerGameType": {
+    "type": "int",
+    "value": 1
+  },
+  "Pos": {
+    "type": "list",
+    "value": {
+      "type": "double",
+      "value": [
+        -1729.8815392109364,
+        78.5625,
+        -3214.772488304334
+      ]
+    }
+  },
+  "current_impulse_context_reset_grace_time": {
+    "type": "int",
+    "value": 0
+  },
+  "Paper.OriginWorld": {
+    "type": "intArray",
+    "value": [
+      1365717235,
+      1441745014,
+      -1821336175,
+      1464284881
+    ]
+  },
+  "PortalCooldown": {
+    "type": "int",
+    "value": 0
+  },
+  "ignore_fall_damage_from_current_explosion": {
+    "type": "byte",
+    "value": 0
+  }
+}

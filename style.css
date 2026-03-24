@@ -1,0 +1,482 @@
+/* Modern UI Overhaul for Minecraft Viewer */
+:root {
+    --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+    --panel-bg: rgba(30, 41, 59, 0.7);
+    --panel-border: rgba(255, 255, 255, 0.15);
+    --text-primary: #f8fafc;
+    --text-secondary: #cbd5e1;
+    --accent: #a78bfa;
+    --accent-glow: rgba(167, 139, 250, 0.5);
+    
+    --tt-bg: rgba(30, 41, 59, 0.9);
+    --tt-border: rgba(167, 139, 250, 0.4);
+    
+    --slot-bg: rgba(0, 0, 0, 0.3);
+    --slot-border: rgba(255, 255, 255, 0.1);
+    
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--bg-gradient);
+    background-size: 200% 200%;
+    animation: bg-anim 20s ease infinite;
+    color: var(--text-primary);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+@keyframes bg-anim {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #d8b4fe 0%, #c084fc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 30px;
+    letter-spacing: -1px;
+    filter: drop-shadow(0 0 20px rgba(192, 132, 252, 0.3));
+}
+
+.upload-container {
+    margin: 20px 0;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
+    color: white;
+    padding: 14px 32px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    border-radius: 999px;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 10px 25px -5px rgba(109, 40, 217, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.custom-file-upload:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 35px -5px rgba(109, 40, 217, 0.6);
+}
+
+#file-status {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.panel {
+    background: var(--panel-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--panel-border);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.panel h2 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.panel h2::before {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 24px;
+    background: var(--accent);
+    border-radius: 4px;
+    box-shadow: 0 0 10px var(--accent-glow);
+}
+
+/* Stats */
+#stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+}
+
+.stat-item {
+    background: rgba(255, 255, 255, 0.06);
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid var(--panel-border);
+    transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-4px);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5);
+}
+
+.stat-label {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.stat-value {
+    display: block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.4rem;
+    color: #4ade80; /* Emerald 400 */
+    font-weight: 600;
+    word-break: break-all;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 6px;
+    border-radius: 100px;
+    width: fit-content;
+    border: 1px solid var(--panel-border);
+}
+
+.tab-btn {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 10px 24px;
+    background: transparent;
+    border: none;
+    border-radius: 100px;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-btn:hover {
+    color: white;
+}
+
+.tab-btn.active {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.tab-content {
+    display: none;
+    animation: fade-in 0.4s ease;
+}
+@keyframes fade-in {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Inventory UI - Modern */
+.mc-gui {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.mc-inventory {
+    background: rgba(30, 41, 59, 0.5);
+    padding: 24px;
+    border-radius: 24px;
+    border: 1px solid var(--panel-border);
+    box-shadow: inset 0 0 40px rgba(0,0,0,0.3), 0 10px 40px rgba(0,0,0,0.3);
+    display: inline-block;
+}
+
+.inventory-label {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+    margin-top: 16px;
+    padding-left: 4px;
+}
+
+.mc-main-slots, .mc-hotbar-slots {
+    display: grid;
+    /* 1.1x scaling for a nice modern chunky feel */
+    grid-template-columns: repeat(9, 48px);
+    gap: 6px;
+}
+
+.mc-hotbar-slots {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.mc-equipment {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    align-items: flex-end;
+}
+
+.mc-armor-slots {
+    display: grid;
+    grid-template-columns: 48px;
+    grid-template-rows: repeat(4, 48px);
+    gap: 6px;
+}
+
+.mc-offhand-slot {
+    /* Kept exactly like the old grid for alignment */
+}
+
+/* Slot Style */
+.mc-slot {
+    width: 48px;
+    height: 48px;
+    background: var(--slot-bg);
+    border: 1px solid var(--slot-border);
+    border-radius: 10px;
+    position: relative;
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.4);
+    transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.mc-slot:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-2px);
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4), inset 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.empty-helmet { background-image: url('icons/empty_armor_slot_helmet.png'); border-color: rgba(255,255,255,0.03); }
+.empty-chestplate { background-image: url('icons/empty_armor_slot_chestplate.png'); border-color: rgba(255,255,255,0.03); }
+.empty-leggings { background-image: url('icons/empty_armor_slot_leggings.png'); border-color: rgba(255,255,255,0.03); }
+.empty-boots { background-image: url('icons/empty_armor_slot_boots.png'); border-color: rgba(255,255,255,0.03); }
+
+.mc-item {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 36px;
+    height: 36px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    image-rendering: pixelated; /* Always crisp for the actual textures */
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.4));
+}
+
+.mc-item-count {
+    position: absolute;
+    bottom: -4px;
+    right: 0px;
+    color: #FFF;
+    font-family: 'JetBrains Mono', 'VT323', monospace;
+    font-weight: 700;
+    font-size: 14px;
+    pointer-events: none;
+    z-index: 2;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.8), 2px 2px 0px rgba(0,0,0,1);
+    filter: drop-shadow(0 0 2px rgba(0,0,0,0.5));
+}
+
+/* Raw NBT Text Box */
+.raw-nbt-container {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 12px;
+    padding: 24px;
+    max-height: 500px;
+    overflow-y: auto;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.95rem;
+    color: #e2e8f0;
+    white-space: pre-wrap;
+    word-break: break-all;
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+}
+
+.raw-nbt-container::-webkit-scrollbar {
+    width: 8px;
+}
+.raw-nbt-container::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.2);
+    border-radius: 4px;
+}
+.raw-nbt-container::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.2);
+    border-radius: 4px;
+}
+.raw-nbt-container::-webkit-scrollbar-thumb:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+/* Refined Premium Tooltips */
+.mc-tooltip {
+    position: absolute;
+    z-index: 1000;
+    background: var(--tt-bg);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid var(--tt-border);
+    border-radius: 12px;
+    padding: 12px 16px;
+    color: var(--text-secondary);
+    pointer-events: none;
+    min-width: 200px;
+    font-size: 1rem;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.7), inset 0 0 30px rgba(139, 92, 246, 0.05);
+    transition: opacity 0.15s ease;
+}
+
+.tooltip-title {
+    font-family: 'Outfit', sans-serif;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 1.15rem;
+    margin-bottom: 6px;
+    letter-spacing: 0.5px;
+}
+
+.tooltip-body {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Bundle sub-items tooltip grid */
+.bundle-tooltip-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 10px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 10px;
+    max-width: 160px; /* Limits to ~5 items wide */
+}
+
+.bundle-tt-item {
+    position: relative;
+    width: 26px;
+    height: 26px;
+    background: rgba(0,0,0,0.6);
+    border-radius: 6px;
+    border: 1px solid rgba(255,255,255,0.05);
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.bundle-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    image-rendering: pixelated;
+    padding: 2px;
+}
+
+.bundle-tt-count {
+    position: absolute;
+    bottom: -3px;
+    right: -1px;
+    font-size: 11px;
+    color: white;
+    text-shadow: 1px 1px 0 #000, 0 1px 2px #000;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    pointer-events: none;
+}
+
+/* Tooltip text colors */
+.color-gray { color: #94a3b8; }
+.color-blue { color: #60a5fa; text-shadow: 0 0 8px rgba(96, 165, 250, 0.3); }
+.color-gold { color: #fbbf24; text-shadow: 0 0 8px rgba(251, 191, 36, 0.3); }
+.color-light-purple { color: #c084fc; text-shadow: 0 0 8px rgba(192, 132, 252, 0.3); }
+.color-red { color: #f87171; text-shadow: 0 0 8px rgba(248, 113, 113, 0.3); }
+
+/* The Glorious Authentic Glint */
+.mc-item.is-enchanted::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    pointer-events: none;
+    
+    background-image: url('icons/enchanted_glint_item.png');
+    background-size: 150%;
+    animation: mc-glint 4s linear infinite;
+    mix-blend-mode: color-dodge;
+    opacity: 0.4;
+    
+    /* Soft purple overlay layer on the glint */
+    background-color: rgba(144, 40, 255, 0.2);
+    background-blend-mode: screen;
+    
+    mask-image: var(--item-bg);
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-image: var(--item-bg);
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+}
+
+@keyframes mc-glint {
+    0% { background-position: 0% 0%; }
+    100% { background-position: -200% -200%; }
+}
