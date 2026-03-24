@@ -11,6 +11,8 @@ const statFood = document.getElementById('stat-food');
 const statXp = document.getElementById('stat-xp');
 const statPos = document.getElementById('stat-pos');
 const statDimension = document.getElementById('stat-dimension');
+const statSpawn = document.getElementById('stat-spawn');
+const statSpawnDim = document.getElementById('stat-spawndim');
 const statGamemode = document.getElementById('stat-gamemode');
 
 // Inventory Elements
@@ -124,7 +126,32 @@ function renderData() {
     }
 
     const dimension = getNBTValue(playerData.Dimension);
-    statDimension.textContent = dimension || "Unknown";
+    statDimension.textContent = dimension ? dimension.replace('minecraft:', '') : "Unknown";
+
+    const respawnObj = getNBTValue(playerData.respawn);
+    let sX = null, sY = null, sZ = null, sDim = null;
+
+    if (respawnObj) {
+        const rPos = getNBTValue(respawnObj.pos);
+        if (rPos && rPos.length >= 3) {
+            sX = rPos[0]; sY = rPos[1]; sZ = rPos[2];
+        }
+        sDim = getNBTValue(respawnObj.dimension);
+    } 
+    
+    // Fallback to standard / legacy Spawn tags
+    if (sX === null) sX = getNBTValue(playerData.SpawnX);
+    if (sY === null) sY = getNBTValue(playerData.SpawnY);
+    if (sZ === null) sZ = getNBTValue(playerData.SpawnZ);
+    if (!sDim) sDim = getNBTValue(playerData.SpawnDimension);
+
+    if (sX !== null && sY !== null && sZ !== null) {
+        statSpawn.textContent = `${sX}, ${sY}, ${sZ}`;
+    } else {
+        statSpawn.textContent = "Not Set";
+    }
+
+    statSpawnDim.textContent = sDim ? sDim.replace('minecraft:', '') : "Not Set";
 
     const gamemode = getNBTValue(playerData.playerGameType);
     const gamemodeNames = ["Survival", "Creative", "Adventure", "Spectator"];
