@@ -9,20 +9,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700;800&family=JetBrains+Mono&family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <!-- pako for gzip decompression -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js"></script>
+    <script src="pako.min.js"></script>
     <!-- nbt.js for NBT parsing -->
-    <script src="https://cdn.jsdelivr.net/npm/nbt@0.8.1/nbt.js"></script>
+    <script src="nbt.js"></script>
 </head>
 <body>
     <div class="container">
         <header>
             <h1>Minecraft Playerdata Viewer</h1>
-            <div class="upload-container">
-                <label for="file-upload" class="custom-file-upload">
-                    Upload playerdata (.dat)
+            <div class="upload-container" id="upload-panel">
+                <input type="file" id="file-upload" accept=".dat,.nbt" />
+                <label for="file-upload" class="upload-btn">
+                    <span class="icon">📁</span> Select .DAT or .NBT file
                 </label>
-                <input id="file-upload" type="file" accept=".dat"/>
+                <div class="drag-text">or drag and drop it here</div>
             </div>
+
+            <!-- Standalone Web Promo (Hidden within extension runtime) -->
+            <div id="extension-promo" class="promo-container" style="display: none;">
+                <div class="promo-header">
+                    <h3>🚀 Install the Browser Extension</h3>
+                    <a href="MCNBT-Extension.zip" download class="btn-download">Download Extension .ZIP</a>
+                </div>
+                <div class="promo-steps">
+                    <p>Get seamless 1-click playerdata viewing directly inside your FalixNodes or Pterodactyl panels!</p>
+                    <ol>
+                        <li>Download and extract the <b>.zip</b> folder above.</li>
+                        <li>Open your browser's extensions page (<code>chrome://extensions/</code>).</li>
+                        <li>Enable <b>Developer mode</b> in the top right corner.</li>
+                        <li>Click <b>Load unpacked</b> and select the extracted folder.</li>
+                    </ol>
+                </div>
+            </div>
+            
             <div id="file-status">Ready for file...</div>
         </header>
 
@@ -74,6 +93,7 @@
                         <button class="tab-btn active" data-tab="tab-inventory">Inventory</button>
                         <button class="tab-btn" data-tab="tab-enderchest">Ender Chest</button>
                         <button class="tab-btn" data-tab="tab-raw">Raw NBT</button>
+                        <button class="tab-btn" data-tab="tab-tree">Styled NBT</button>
                     </div>
 
                     <div id="tab-inventory" class="tab-content active">
@@ -113,9 +133,20 @@
                     </div>
 
                     <div id="tab-raw" class="tab-content">
+                        <div class="raw-actions" style="margin-bottom: 12px; display: flex; justify-content: flex-end;">
+                            <button id="btn-copy" style="background: rgba(99, 102, 241, 0.2); border: 1px solid rgba(99, 102, 241, 0.4); color: white; padding: 6px 12px; border-radius: 6px; cursor: pointer; font-family: Inter, sans-serif;" onclick="navigator.clipboard.writeText(document.getElementById('raw-nbt-output').textContent); this.textContent='Copied!'; setTimeout(()=>this.textContent='Copy JSON', 2000);">Copy JSON</button>
+                        </div>
                         <div class="raw-nbt-container">
                             <pre id="raw-nbt-output">Upload a file to view raw NBT.</pre>
                         </div>
+                    </div>
+
+                    <div id="tab-tree" class="tab-content">
+                        <div style="margin-bottom: 12px; display: flex; gap: 8px;">
+                            <button id="btn-expand-all" style="background: rgba(99, 102, 241, 0.2); border: 1px solid rgba(99, 102, 241, 0.4); color: white; padding: 6px 12px; border-radius: 6px; cursor: pointer; font-family: Inter, sans-serif;">Expand All</button>
+                            <button id="btn-collapse-all" style="background: rgba(99, 102, 241, 0.2); border: 1px solid rgba(99, 102, 241, 0.4); color: white; padding: 6px 12px; border-radius: 6px; cursor: pointer; font-family: Inter, sans-serif;">Collapse All</button>
+                        </div>
+                        <div id="tree-output" class="tree-container">Tree will generate here...</div>
                     </div>
                 </section>
             </div>

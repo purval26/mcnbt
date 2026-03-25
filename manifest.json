@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "FalixNodes MCNBT Viewer",
+  "version": "1.0",
+  "description": "View Minecraft playerdata (.dat) directly inside your web browser on FalixNodes.",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.falixnodes.net/*", "*://panel.falixnodes.net/*"],
+      "js": ["content.js"],
+      "css": ["inject.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "index.html",
+        "style.css",
+        "script.js",
+        "pako.min.js",
+        "nbt.js",
+        "icons/*",
+        "icons/item/*"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

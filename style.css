@@ -449,8 +449,73 @@ input[type="file"] {
 .color-light-purple { color: #c084fc; text-shadow: 0 0 8px rgba(192, 132, 252, 0.3); }
 .color-red { color: #f87171; text-shadow: 0 0 8px rgba(248, 113, 113, 0.3); }
 
+/* Extension Promo */
+.promo-container {
+    background: rgba(30, 41, 59, 0.7);
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    text-align: left;
+}
+.promo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+}
+.promo-header h3 {
+    margin: 0;
+    color: #a5b4fc;
+    font-weight: 600;
+}
+.btn-download {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9em;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+}
+.btn-download:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.5);
+}
+.promo-steps {
+    font-size: 0.95em;
+}
+.promo-steps p {
+    color: #e2e8f0;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+.promo-steps ol {
+    color: #94a3b8;
+    margin: 0;
+    padding-left: 20px;
+    line-height: 1.6;
+}
+.promo-steps li b {
+    color: #e2e8f0;
+}
+.promo-steps li code {
+    background: rgba(0,0,0,0.3);
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: #fbbf24;
+    font-family: monospace;
+}
+
 /* The Glorious Authentic Glint */
-.mc-item.is-enchanted::after {
+.mc-item.is-enchanted::after, .bundle-tt-item.is-enchanted::after {
     content: '';
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
@@ -460,7 +525,7 @@ input[type="file"] {
     background-size: 150%;
     animation: mc-glint 4s linear infinite;
     mix-blend-mode: color-dodge;
-    opacity: 0.4;
+    opacity: 0.6;
     
     /* Soft purple overlay layer on the glint */
     background-color: rgba(144, 40, 255, 0.2);
@@ -480,3 +545,48 @@ input[type="file"] {
     0% { background-position: 0% 0%; }
     100% { background-position: -200% -200%; }
 }
+
+/* NBT TREE FORMATTER CSS */
+.tree-container {
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 16px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #f8fafc;
+    overflow-y: auto;
+    max-height: calc(100vh - 200px);
+}
+
+.nbt-node { margin-left: 20px; }
+#tree-output > .nbt-node { margin-left: 0; }
+
+.nbt-children {
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    margin-left: 6px;
+    padding-left: 14px;
+}
+
+.nbt-leaf {
+    margin-left: 20px;
+    padding: 2px 0;
+}
+
+summary {
+    cursor: pointer;
+    user-select: none;
+    padding: 2px 0;
+    transition: color 0.2s ease;
+}
+
+summary:hover { color: #a5b4fc; }
+summary::marker { color: #64748b; }
+
+.nbt-key { color: #93c5fd; font-weight: 600; }
+.nbt-dim { color: #64748b; font-weight: 500; }
+.nbt-size { color: #cbd5e1; font-style: italic; font-size: 0.9em; }
+
+.nbt-val-str { color: #86efac; }
+.nbt-val-num { color: #fca5a5; }
