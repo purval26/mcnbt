@@ -35,6 +35,10 @@ function checkUrl() {
 setInterval(checkUrl, 500);
 
 function cleanupViewer() {
+    if (window.mcnbtRefreshInterval) {
+        clearInterval(window.mcnbtRefreshInterval);
+        window.mcnbtRefreshInterval = null;
+    }
     const existing = document.getElementById('mcnbt-window');
     if (existing) existing.remove();
     document.querySelectorAll('.mcnbt-loading-text').forEach(e => e.remove());
@@ -114,6 +118,55 @@ async function injectViewer(serverId, filePath) {
         wrapper.appendChild(iframe);
         document.body.appendChild(wrapper);
         
+        // Auto Refresh Logic
+        window.mcnbtRefreshInterval = setInterval(async () => {
+            // Protect against race conditions where iframe is removed mid-fetch
+            if (!document.getElementById('mcnbt-iframe')) {
+                clearInterval(window.mcnbtRefreshInterval);
+                return;
+            }
+            
+            let newDownloadUrl = null;
+            try {
+                const postRes = await fetch(`/api/v1/servers/${serverId}/files/download`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ file: filePath })
+                });
+                if (postRes.ok) {
+                    const json = await postRes.json();
+                    if (json.url) newDownloadUrl = json.url;
+                    else if (json.attributes && json.attributes.url) newDownloadUrl = json.attributes.url;
+                }
+            } catch(e) {}
+
+            if (!newDownloadUrl) {
+                try {
+                    const getRes = await fetch(`/api/client/servers/${serverId}/files/download?file=${encodeURIComponent(filePath)}`);
+                    if (getRes.ok) {
+                        const json = await getRes.json();
+                        if (json.attributes && json.attributes.url) newDownloadUrl = json.attributes.url;
+                    }
+                } catch(e) {}
+            }
+            
+            if (newDownloadUrl) {
+                try {
+                    const fileRes = await fetch(newDownloadUrl);
+                    const arrayBuffer = await fileRes.arrayBuffer();
+                    const frame = document.getElementById('mcnbt-iframe');
+                    if (frame && frame.contentWindow) {
+                        const filename = filePath.split('/').pop();
+                        frame.contentWindow.postMessage(
+                            { type: 'LOAD_NBT_BUFFER', buffer: arrayBuffer, filename: filename },
+                            '*',
+                            [arrayBuffer]
+                        );
+                    }
+                } catch(e) { console.warn("MCNBT: Refresh stream failed", e); }
+            }
+        }, 5000);
+
         // Window Controls Logic
         let isFloating = false;
         document.getElementById('mcnbt-toggle-float').onclick = () => {

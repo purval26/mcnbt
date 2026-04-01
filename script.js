@@ -187,6 +187,27 @@ function isItemEnchanted(components, tagData, idClean) {
     return hasEnchants;
 }
 
+const maxDurabilityMap = {
+    'wooden_sword': 59, 'stone_sword': 131, 'iron_sword': 250, 'golden_sword': 32, 'diamond_sword': 1561, 'netherite_sword': 2031,
+    'wooden_pickaxe': 59, 'stone_pickaxe': 131, 'iron_pickaxe': 250, 'golden_pickaxe': 32, 'diamond_pickaxe': 1561, 'netherite_pickaxe': 2031,
+    'wooden_axe': 59, 'stone_axe': 131, 'iron_axe': 250, 'golden_axe': 32, 'diamond_axe': 1561, 'netherite_axe': 2031,
+    'wooden_shovel': 59, 'stone_shovel': 131, 'iron_shovel': 250, 'golden_shovel': 32, 'diamond_shovel': 1561, 'netherite_shovel': 2031,
+    'wooden_hoe': 59, 'stone_hoe': 131, 'iron_hoe': 250, 'golden_hoe': 32, 'diamond_hoe': 1561, 'netherite_hoe': 2031,
+    'leather_helmet': 55, 'leather_chestplate': 80, 'leather_leggings': 75, 'leather_boots': 65,
+    'chainmail_helmet': 165, 'chainmail_chestplate': 240, 'chainmail_leggings': 225, 'chainmail_boots': 195,
+    'iron_helmet': 165, 'iron_chestplate': 240, 'iron_leggings': 225, 'iron_boots': 195,
+    'golden_helmet': 77, 'golden_chestplate': 112, 'golden_leggings': 105, 'golden_boots': 91,
+    'diamond_helmet': 363, 'diamond_chestplate': 528, 'diamond_leggings': 495, 'diamond_boots': 429,
+    'netherite_helmet': 407, 'netherite_chestplate': 592, 'netherite_leggings': 555, 'netherite_boots': 481,
+    'bow': 384, 'crossbow': 326, 'trident': 250, 'fishing_rod': 64, 'shears': 238, 
+    'flint_and_steel': 64, 'carrot_on_a_stick': 25, 'warped_fungus_on_a_stick': 100, 
+    'shield': 336, 'elytra': 432, 'turtle_helmet': 275, 'brush': 64, 'mace': 500
+};
+
+function getMaxDamage(idClean) {
+    return maxDurabilityMap[idClean] || null;
+}
+
 function renderData() {
     // 0. Player Name resolution
     const headerTitle = document.querySelector('header h1');
@@ -428,6 +449,40 @@ function createItemEl(itemTag) {
         el.classList.add('is-enchanted');
     }
 
+    // Durability Bar Processor
+    let damage = null;
+    if (tagData && tagData.Damage) damage = getNBTValue(tagData.Damage);
+    else if (components && components["minecraft:damage"]) damage = getNBTValue(components["minecraft:damage"]);
+
+    if (damage !== null && damage > 0) {
+        let maxDamage = (components && components["minecraft:max_damage"]) ? getNBTValue(components["minecraft:max_damage"]) : getMaxDamage(idClean);
+        
+        // Dynamic fallback for custom modded items (like "Spear") that accrued damage but aren't in the Vanilla registry
+        if (!maxDamage) {
+            if (damage < 131) maxDamage = 131; // Stone Tier Baseline
+            else if (damage < 250) maxDamage = 250; // Iron Tier Baseline
+            else if (damage < 1561) maxDamage = 1561; // Diamond Tier Baseline
+            else maxDamage = damage + 500; // Unknown Mega-Tier
+        }
+
+        if (maxDamage) {
+            const durability = Math.max(0, maxDamage - damage);
+            const percent = durability / maxDamage;
+            const hue = Math.max(0, percent * 120);
+
+            const durabilityBarContainer = document.createElement('div');
+            durabilityBarContainer.className = 'mc-item-durability-bg';
+
+            const durabilityBar = document.createElement('div');
+            durabilityBar.className = 'mc-item-durability';
+            durabilityBar.style.width = `${Math.ceil(percent * 100)}%`;
+            durabilityBar.style.backgroundColor = `hsl(${hue}, 100%, 50%)`;
+
+            durabilityBarContainer.appendChild(durabilityBar);
+            el.appendChild(durabilityBarContainer);
+        }
+    }
+
     if (count > 1) {
         const countEl = document.createElement('div');
         countEl.className = 'mc-item-count';
@@ -601,6 +656,29 @@ function showTooltip(e, itemTag, fallbackName) {
             const bComp = itemNode.components ? getNBTValue(itemNode.components) : null;
             const bTag = itemNode.tag ? getNBTValue(itemNode.tag) : null;
             
+            // Damage check for bundles
+            let bDamage = null;
+            if (bTag && bTag.Damage) bDamage = getNBTValue(bTag.Damage);
+            else if (bComp && bComp["minecraft:damage"]) bDamage = getNBTValue(bComp["minecraft:damage"]);
+            
+            let duraHtml = '';
+            if (bDamage !== null && bDamage > 0) {
+                let maxDamage = (bComp && bComp["minecraft:max_damage"]) ? getNBTValue(bComp["minecraft:max_damage"]) : getMaxDamage(bIdClean);
+                
+                if (!maxDamage) {
+                    if (bDamage < 131) maxDamage = 131;
+                    else if (bDamage < 250) maxDamage = 250;
+                    else if (bDamage < 1561) maxDamage = 1561;
+                    else maxDamage = bDamage + 500;
+                }
+
+                if (maxDamage) {
+                    const percent = Math.max(0, maxDamage - bDamage) / maxDamage;
+                    const hue = Math.max(0, percent * 120);
+                    duraHtml = `<div class="mc-item-durability-bg"><div class="mc-item-durability" style="width: ${Math.ceil(percent * 100)}%; background-color: hsl(${hue}, 100%, 50%);"></div></div>`;
+                }
+            }
+
             const isEnch = isItemEnchanted(bComp, bTag, bIdClean);
             const enchClass = isEnch ? ' is-enchanted' : '';
             const bgVar = isEnch ? `style="--item-bg: url('icons/item/${bIdClean}.png');"` : '';
@@ -610,6 +688,7 @@ function showTooltip(e, itemTag, fallbackName) {
                     <img class="bundle-img" src="icons/item/${bIdClean}.png" 
                          onerror="this.src='icons/${bIdClean}.png'; if('${enchClass}') this.parentElement.style.setProperty('--item-bg', 'url(icons/${bIdClean}.png)'); this.onerror=function(){this.src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAAKklEQVR42mL5//8/AyWAiYFCwFCMKjhqMPEwMG4A5mGjhoEMGA0QoAAA0cQh3+0T6GAAAAAASUVORK5CYII='};">
                     ${bCount > 1 ? `<span class="bundle-tt-count">${bCount}</span>` : ''}
+                    ${duraHtml}
                 </div>
             `;
         });
